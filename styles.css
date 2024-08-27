@@ -65,7 +65,7 @@
     }
   
     .navbar a:hover {
-      color: #4285f4; /* Change color on hover */
+      color: #fffce8; /* Change color on hover */
     }
   
     .header-title, .cirqus-title, .sbp-title, .flashg-title {
@@ -112,19 +112,25 @@
       margin: 0 auto; /* Center the project details horizontally */
       text-align: center;
     }
-    
-    #design-project-2{
-      width: 30%; /* Adjust the width as needed */
-      margin: 0 auto; /* Center the project details horizontally */
-    }
-    #design-project-1, #development-project-1, #development-project-2{
-      width: 50%;
+
+    #design-project-1, #design-project-2, #development-project-1, #development-project-2{
+      width: 100%;
       margin: 0 auto;
       margin-bottom: 50px;
     }
     .project-details li, .project-details p{
       text-align: left;
     }
+    .development-projects{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    } 
+    .design-projects{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    } 
     .project-buttons{
       display: flex;
       gap: 10px; /* Adds space between buttons */
@@ -133,6 +139,9 @@
       margin-top: 10px;
     }
     .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       background-color: #d5ebff; /* Button color */
       color: black;
       padding: 10px 20px;
@@ -179,10 +188,16 @@
       border-radius: 30%;
       animation: spin 2s infinite linear; /* Apply animation */
     }
-    .sbp-image{
-      max-width: 50%;
+    .live-icon, .view-icon{
+      width: 18px;
+      height: 18px;
     }
-    .evaheld-image{
+    .development-project-1-visit{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .evaheld-image, .cirqus-image, .flashcardgo-image, .sbp-image{
       max-width: 80%;
     }
 
@@ -242,7 +257,7 @@
     }
     @media (max-width: 768px) {
       .header {
-          height: 40vh; 
+          height: 30vh; 
       }
       .header-title, .cirqus-title {
           font-size: 10px; 
@@ -264,7 +279,7 @@
       .project-container {
           padding: 20px; 
       }
-      .project-details, #design-project-2, #development-project-1 {
+      .project, #design-project-1, #design-project-2, #development-project-1, #development-project-2 {
           width: 90%; 
       }
       
@@ -272,6 +287,12 @@
       .grid {
           grid-template-columns: 1fr; 
       }
+      .development-projects{
+        gap: 40px;
+      } 
+      .design-projects{
+        gap: 40px;
+      } 
       .icon-container {
           width: 80px; 
           height: 80px;
