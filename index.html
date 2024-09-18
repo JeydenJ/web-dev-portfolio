@@ -13,31 +13,7 @@
 </head>
 
 <body>
-    <header>
-    <div class="header">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <div class="icon-container">
-                            <div class="icon"></div>
-                        </div>
-                    </a>
-                </li>
-
-                <li><a href="index.html"><b>Work</b></a></li>
-                <li><a href="Jeyden Johnson Resume 05-08-2024.pdf"><b>Resume</b></a></li>
-            </ul>
-        </nav>
-        <div class="header-title">
-            <h1>Hi, I am Jeyden Johnson.
-                <br>I do Web Development.
-            </h1>
-        </div>
-    </div>
-</header>
-
-
+    <header></header>
     <div class="grid">
         <section class="project-container">
             <div class="project-type">
@@ -166,17 +142,45 @@
             </div>
         </section>
     </div>
-
+    <section id="contact">
+        <div class="project-type">
+            <h2>Contact Me</h2>
+        </div>
+ 
+        <div class="contact-card">
+          <form action="mailto:jeyden360@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>         
+    <script src="header.js"></script>
 </body>
 <footer>
-    <p class="credit-text">Designed and coded by Jeyden Johnson. 2024 verison WIP</p>
-    <div class="social-icons">
-        <a href="https://github.com/JeydenJ" target="_blank"><img class="github-icon" src="images/Icons/github-mark.png"
-                alt="GitHub"></a>
-        <a href="mailto:jeyden360@gmail.com" target="_blank"><img class="email-icon" src="images/Icons/email-icon.png"
-                alt="Email"></a>
-        <a href="https://www.linkedin.com/in/jeyden-johnson" target="_blank"><img class="linkedin-icon"
-                src="images/Icons/linkedin-icon.png" alt="LinkedIn"></a>
+    <div class="footer-content">
+        <p class="credit-text">Designed and coded by Jeyden Johnson. 2024 version WIP</p>
+        <div class="social-icons">
+            <a href="https://github.com/JeydenJ" target="_blank" aria-label="GitHub">
+                <img class="social-icon" src="images/Icons/github-mark.png" alt="GitHub">
+            </a>
+            <a href="mailto:jeyden360@gmail.com" target="_blank" aria-label="Email">
+                <img class="social-icon" src="images/Icons/email-icon.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/jeyden-johnson" target="_blank" aria-label="LinkedIn">
+                <img class="social-icon" src="images/Icons/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
     </div>
 </footer>
 </html>

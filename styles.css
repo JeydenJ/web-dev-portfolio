@@ -57,7 +57,7 @@ p {
 .header {
   width: 100%;
   background-color: #d5ebff;
-  height: 60vh;
+  height: 55vh;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -140,6 +140,9 @@ p {
 .design-projects {
   padding-left: 100px;
   padding-right: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 
 .project-details li,
@@ -147,18 +150,6 @@ p {
   text-align: left;
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-light);
-}
-
-.development-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-}
-
-.design-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
 }
 
 .project-buttons {
@@ -184,7 +175,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.project-button:hover {
+.project-button:hover, #contact button:hover {
   background-color: #fffce8;
 }
 
@@ -238,41 +229,6 @@ p {
   font-size: var(--font-size-small);
 }
 
-.github-icon,
-.email-icon,
-.linkedin-icon {
-  width: 30px;
-  /* Adjust icon size */
-}
-
-.github-icon,
-.email-icon,
-.linkedin-icon {
-  opacity: 0.5;
-  /* Set default opacity to 50% */
-  transition: opacity 0.3s ease;
-  /* Add transition effect */
-}
-
-.github-icon:hover,
-.email-icon:hover,
-.linkedin-icon:hover {
-  opacity: 1;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 10px;
-}
-
-.credit-text {
-  margin-top: 80px;
-}
-
 .project-image {
   display: flex;
   flex-direction: row;
@@ -280,6 +236,100 @@ p {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #d5ebff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.credit-text {
+  margin-bottom: 15px;
+  font-size: var(--font-size-small);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.5;
+}
+
+#contact {
+  padding-top: 40px;
+  text-align: center; /* Centers the entire section content */
+}
+
+.contact-card {
+  display: inline-block; /* Centers the card */
+  padding: 50px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fbf3ff;
+  max-width: 700px; /* Increase the width */
+  width: 100%; /* Make sure it is responsive */
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements horizontally */
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contact .form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin-bottom: 15px;
+  text-align: left; /* Align text inside the group to the left */
+}
+
+#contact label {
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels stand out */
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#contact textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  height: 60px;
+  max-height: 100px;
+  min-height: 15px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: #d5ebff;
+  color: black;
+  border: solid;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Keyframes for the spin animation */
