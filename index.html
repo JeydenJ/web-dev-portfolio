@@ -144,11 +144,11 @@
     </div>
     <section id="contact">
         <div class="project-type">
-            <h2>Contact Me</h2>
+          <h2>Contact Me</h2>
         </div>
- 
+      
         <div class="contact-card">
-          <form action="mailto:jeyden360@gmail.com" method="post" enctype="text/plain">
+          <form action="mailto:jeyden360@gmail.com" method="post" enctype="text/plain" id="contact-form">
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required>
@@ -161,10 +161,21 @@
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" id="submit-btn">Send Message</button>
           </form>
         </div>
-      </section>         
+      </section>
+      
+      <script>
+        const form = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-btn');
+      
+        form.addEventListener('submit', function(event) {
+          setTimeout(() => {
+            form.reset(); // Clears the form after submission
+          }, 1000); // Add delay to allow email client to open
+        });
+      </script>     
     <script src="header.js"></script>
 </body>
 <footer>

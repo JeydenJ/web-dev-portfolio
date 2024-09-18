@@ -277,13 +277,13 @@ footer {
 }
 
 .contact-card {
-  display: inline-block; /* Centers the card */
+  display: inline-block;
   padding: 50px 20px 20px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fbf3ff;
-  max-width: 700px; /* Increase the width */
-  width: 100%; /* Make sure it is responsive */
+  max-width: 700px; 
+  width: 100%; 
 }
 
 #contact form {
@@ -361,16 +361,11 @@ footer {
 
   .development-projects,
   .design-projects {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-
-  .development-projects,
-  .design-projects {
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .project-type {
@@ -400,5 +395,21 @@ footer {
     margin: 0 auto;
     text-align: center;
   }
+  .contact-card {
+    padding: 40px 15px; /* Adjust padding for smaller screens */
+    max-width: 90%; /* Make the card more responsive */
+  }
 
+  #contact .form-group {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  #contact input, #contact textarea {
+    width: 100%; 
+    padding: 10px;
+  }
+
+  #contact button {
+    width: 100%; 
+  }
 }
