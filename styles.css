@@ -99,7 +99,47 @@ p {
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+.landing-container {
+  max-width: 900px;       /* keeps content narrow for readability */
+  margin: 0 auto;         /* centers horizontally */
+  padding: 2rem 1rem;     /* spacing around content */
+  text-align: center;     /* center text by default */
+}
 
+.landing-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.landing-container h3 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.landing-container p,
+.landing-container ul {
+  line-height: 1.6;
+  color: #555;
+}
+
+.landing-container ul {
+  list-style: none;       /* remove default bullets */
+  padding: 0;
+}
+
+.landing-container li {
+  margin: 0.3rem 0;
+}
+.skills-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.skills-column {
+    flex: 1 1 300px;
+    min-width: 250px;
+}
 .project-type {
   display: flex;
   justify-content: center;
